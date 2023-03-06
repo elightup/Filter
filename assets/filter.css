@@ -1,0 +1,78 @@
+.filter_home {
+  display: flex;
+  flex-wrap: wrap; }
+  .filter_home .f_row {
+    width: 25%;
+    padding: 5px 10px; }
+  @media (max-width: 991px) {
+    .filter_home {
+      display: block; }
+      .filter_home .f_row {
+        width: 100%; } }
+  .filter_home #quan_huyen_hn {
+    display: none; }
+  .filter_home #quan_huyen_hcm {
+    display: none; }
+  .filter_home #dien_tich {
+    position: relative;
+    overflow: hidden; }
+    .filter_home #dien_tich .dt_from_to {
+      position: absolute;
+      left: 0;
+      bottom: -200%;
+      width: 100%;
+      padding: 5px 10px; }
+  .filter_home #dien_tich:hover {
+    overflow: visible; }
+    .filter_home #dien_tich:hover .dt_from_to {
+      left: 0;
+      top: 50px; }
+    @media (max-width: 991px) {
+      .filter_home #dien_tich:hover .dt_from_to {
+        position: unset;
+        padding: 0; } }
+  .filter_home button {
+    width: 100%;
+    transition: 0.3s ease-in;
+    color: #fff; }
+    .filter_home button:hover {
+      background: #026613; }
+  .filter_home.filter_widget {
+    display: block; }
+    .filter_home.filter_widget .f_row {
+      width: 100%; }
+    .filter_home.filter_widget #dien_tich:hover .dt_from_to {
+      position: unset !important;
+      padding: 0 !important; }
+
+.filterwp .fwp-topbar {
+  display: none !important; }
+
+.filterwp .fwp-posts > div {
+  padding: 10px !important; }
+  .filterwp .fwp-posts > div .box-text {
+    font-family: 'Roboto'; }
+
+.filterwp .fwp-mobile-nav {
+  display: none !important; }
+
+.widget-filter {
+  border: 1px #aaa solid;
+  padding: 10px 0px;
+  padding-top: 20px;
+  border-radius: 5px;
+  background-color: #f3f3f3; }
+  .widget-filter .widget-title {
+    font-size: 1.2em !important;
+    padding-left: 10px; }
+  .widget-filter .is-divider {
+    margin-left: 10px; }
+
+.title-search {
+  font-size: 24px;
+  color: #038018; }
+  @media (max-width: 991px) {
+    .title-search {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=filter.css.map */
